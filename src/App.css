@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #fd7629;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features {
+  margin: 60px 80px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.feature-card .icon-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.feature-card .text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature-card .text-container h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  margin: 5px 0;
+}
+.feature-card .text-container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 60%;
+
+  color: #6f6f6f;
+}
+
+/* apps css */
+
+.causes-container,
+.causes-container .title-container,
+.causes-container .card-container,
+.causes-container .card-container .card .card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.causes-container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.causes-container .title-container {
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.causes-container .title-container .main-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.causes-container .title-container .title-des {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+  text-transform: lowercase;
+  color: #6f6f6f;
+}
+
+.causes-container .card-container {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.causes-container .card-container .card {
+  width: 300px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.causes-container .card-container .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.causes-container .card-container .card .recent-tag {
+  background: #fd7629;
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.causes-container .card-container .card .card-info {
+  flex-direction: column;
+  padding: 25px 20px 35px 20px;
+}
+
+.causes-container .card-container .card .card-info .card-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.causes-container .card-container .card .card-info .card-des {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0 25px 0;
+  color: #6f6f6f;
+}
+
+.primary-btn button {
+  cursor: pointer;
+  padding: 10px 35px;
+  border: none;
+  background: #fd7629;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ========================== about ===================== */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.about-container {
+  width: 100%;
+  background: #fff;
+}
+
+.about-container img {
+  width: 50%;
+}
+
+.about-container .about-data {
+  padding: 0 70px;
+}
+
+.about-container .about-data .about-title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #000000;
+}
+
+.about-container .about-data .about-des {
+  font-weight: 400;
+  font-size: 18px;
+  color: #6f6f6f;
+  margin: 10px 0 30px 0;
+}
+
+/* ==================== spec =============== */
+
+.spec-container .spec-data-container .spec-card,
+.spec-container .spec-data-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spec-container {
+  margin: 40px 0;
+  margin-bottom: 100px;
+}
+
+.spec-container .title-container .main-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.spec-container .spec-data-container {
+  flex-wrap: wrap;
+  padding: 0px 80px;
+}
+
+.spec-container .spec-data-container .spec-card {
+  width: 225px;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 25px 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin: 25px 35px;
+  cursor: pointer;
+}
+
+.spec-container .spec-data-container .spec-card .data-container {
+  margin-top: 20px;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 0 80px 0;
+}
+
+.quote-container img {
+  width: 100%;
+}
+.quote-container p {
+  width: 75%;
+  text-align: center;
+  position: absolute;
+  top: 110px;
+  font-size: 30px;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1.35px;
+  font-family: "Merriweather", serif;
+}
+.quote-container span {
+  width: 75%;
+  text-align: right;
+  position: absolute;
+  top: 175px;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1.35px;
+  font-family: "Merriweather", serif;
+}
+
